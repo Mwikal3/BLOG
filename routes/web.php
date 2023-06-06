@@ -23,10 +23,15 @@ Route::get('/', function () {
 
 Route::view('/about', 'about');
 
-Route::get('post', function(){
-    $post = file_get_contents(__DIR__ . '/../resources/posts/my-first-post.html');
+Route::get('posts/{post}', function($slug){
 
-    return view('post', [
-        'post' =>$post
-    ]);
-});
+   if(! file_exists($path= (__DIR__ . "/../resources/posts/{$slug}.html"))){
+            return redirect('/');
+   }
+    $post = cache()->remember("posts.{$slug}",3600,fn() =>file_get_contents($path));
+            return view('post', ['post' =>$post]);
+
+})->where('post', '[A-z_\-]+');
+
+   
+    
