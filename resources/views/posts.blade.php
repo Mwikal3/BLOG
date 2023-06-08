@@ -10,14 +10,6 @@
         <p>One of the misconceptions about starting a blog is that you need to be a great writer to be successful. Nothing could be further from the truth. People read blog sites to get a personal perspective on things, so most bloggers write in a very informal and conversational style.</p>
 </article>
 
-<article>
-        <h1><a href="/posts/my-second-post">My second post</a></h1>
-        <p>One of the misconceptions about starting a blog is that you need to be a great writer to be successful. Nothing could be further from the truth. People read blog sites to get a personal perspective on things, so most bloggers write in a very informal and conversational style.</p>
-</article>
 
-<article>
-        <h1><a href="/posts/my-third-post">My third post</a></h1>
-        <p>One of the misconceptions about starting a blog is that you need to be a great writer to be successful. Nothing could be further from the truth. People read blog sites to get a personal perspective on things, so most bloggers write in a very informal and conversational style.</p>
-</article>
 </body>
 </html>
