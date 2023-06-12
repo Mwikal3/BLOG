@@ -13,3 +13,13 @@
 
 </body>
 </html>
+
+
+
+{{-- <h1>
+    <?= $post->tittle ?>
+    </h1>
+    
+    <div>
+        <?= $post->body ?>
+    </div> --}}
