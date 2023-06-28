@@ -18,9 +18,7 @@ Route::get('/', function () {
     return view('posts');
 });
 
-// Route::get('/about', function () {
-//     return view('about');
-// });
+
 
 Route::get('/', function(){
 
@@ -29,10 +27,10 @@ Route::get('/', function(){
     ]);
 });
 
-Route::get('posts/{post}', function($slug){
+Route::get('posts/{post}', function($id){
     //this finds a post by its slug and passes it to a view called post 
     return view('post',[
-        'post'=>Post::find($slug)
+        'post'=>Post::find($id)
     ]);
 
 })->where('post', '[A-z_\-]+');
