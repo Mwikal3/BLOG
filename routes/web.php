@@ -14,9 +14,9 @@ use App\Models\Post;
 |
 */
 
-Route::get('/', function () {
-    return view('posts');
-});
+// Route::get('/', function () {
+//     return view('posts');
+// });
 
 
 
@@ -27,13 +27,14 @@ Route::get('/', function(){
     ]);
 });
 
-Route::get('posts/{post}', function($id){
+Route::get('posts/{post:slug}', function(Post $post){//Post::where ('slug',$post)->firstOrFail()
     //this finds a post by its slug and passes it to a view called post 
     return view('post',[
-        'post'=>Post::find($id)
+        'post'=>$post
     ]);
 
-})->where('post', '[A-z_\-]+');
+});
+// ->where('post', '[A-z_\-]+');
 
   
     

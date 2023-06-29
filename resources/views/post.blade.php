@@ -4,6 +4,10 @@
     <h1>
     {{$post->tittle }} 
     </h1>
+
+    <p>
+        <a href="">{{$post->category->name}}</a>
+     </p>
     
     <div>
         {{!! $post->body !!}}
